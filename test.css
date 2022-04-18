@@ -1,7 +1,4 @@
-div {
-	border: 5px solid blue;
-	border-radius:10px;
-}
+
 .class {
 	border: 4px solid rgb(0,216,255);
 	border-radius:10px;
@@ -16,5 +13,6 @@ div {
 }
 #myid {
 	border: 4px solid blue;
+	border-radius:10px;
 }
 
