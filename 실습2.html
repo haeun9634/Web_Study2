@@ -8,12 +8,13 @@
 		</p>
 		<script>
 	function jstest(){
-		var string1 = prompt("숫자입력", "");
-		var string2 = prompt("숫자입력", "");
-		var string3 = prompt("숫자입력", "");
+		var string1 = parseInt(prompt("숫자입력", ""));
+		var string2 = parseInt(prompt("숫자입력", ""));
+		var string3 = parseInt(prompt("숫자입력", ""));
 		alert("1번째 입력값 " + string1 + "입니다. \n 2번째 입력값 " + string2 + "입니다. \n 3번째 입력값 " + string3 + "입니다.");
 		
 		var a = 0 ;
+		
 		if (string1 < string2)
 		{
 			if (string2 > string3)
@@ -25,9 +26,16 @@
 				a= string3 ;
 			}
 		}
-		else
+		else 
 		{	
-			a= string1 ;
+			if (string1 > string3)
+			{
+				a= string1 ;
+			}
+			else
+			{
+				a= string3 ;
+			}
 		}
 		document.write("입력한 수: " + string1 + "　" + string2 + "　" + string3 + "<br>");
 		document.write("가장 큰 수= " + a);

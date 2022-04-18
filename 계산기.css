@@ -1,0 +1,10 @@
+div {
+	background-color: rgb(218, 217, 255)
+}
+body{
+	background-color: rgb(250,244,192);
+}
+#num{
+	font-size: 10px;
+	font-weight: bold;
+}
