@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> 계산기 </title>
+	</head>
+	<body>
+		<div> <input type="text" name="" id="num">  </div> 
+		<div> <button type="button" value="7" onclick ='js("7")'> 7 </button> <button type="button" value="8" onclick ='js("8")'> 8 </button> <button type="button" onclick ='js("9")'> 9 </button> <button type="button" value="x" onclick ='js("*")'> x </button> </div>
+		<div> <button type="button" value="4" onclick ='js("4")'> 4 </button> <button type="button" value="5" onclick ='js("5")'> 5 </button> <button type="button" onclick ='js("6")'> 6 </button> <button type="button" value="-" onclick ='js("-")'> - </button> </div>
+		<div> <button type="button" value="1" onclick ='js("1")'> 1 </button> <button type="button" value="2" onclick ='js("2")'> 2 </button> <button type="button" onclick ='js("3")'> 3 </button> <button type="button" value="+" onclick ='js("+")'> + </button> </div>
+		<div> <button type="button" value="0" onclick ='js("0")'> 0 </button> <button type="button" onclick ='js("/")'> / </button> <button type="button" value="=" onclick ='calc()'> = </button> </div>
+		
+	</body>
+	<script>
+	function js(k){
+	
+			var num = document.getElementById("num");
+			num.value += k; //값을 저장
+		
+	}
+	function calc(){
+		var num = document.getElementById("num");
+		console.log(num.value); // 위에 선언된 num.value를 불러오기
+		num.value = eval(num.value); //eval은 문자열 수식을 계산해줌 
+	}
+	</script>	
+	</body>
+<script>

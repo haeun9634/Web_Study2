@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title> Javascript study </title>
+	</head>
+	<body>
+		<center>
+			 <span class="myspan" align="center" style="color:red; background-color:red;" onmouseover="change('red')"> ㅁ </span> 
+			 <span id="myspan2" align="center" style="color:blue; background-color:blue;" onmouseover="change('blue')"> ㅁ </span> 
+			 <span class="myspan3" align="center" style="color:green; background-color:green;" onmouseover="change('green')"> ㅁ </span>
+		 </center>
+		
+		<script>
+			var a = document.getElementsByClassName("myspan")[0].innerHTML ;
+			var b = document.getElementById("myspan2").innerHTML ;
+			var c = document.getElementsByClassName("myspan3")[0].innerHTML ;
+			
+			function change(k){
+				document.body.style.backgroundColor= k;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+ <head> <title> 자바스크립트의 내장 함수 </title> </head>
+ <body>
+	<p align="center">
+			<input type="button" onclick="jstest()" value="클릭시 실행"/>
+		</p> 
+ </body>
+<script>
+	function jstest(){
+		var c = Number("72");
+		var string = prompt("", "문자열을 입력하세요");
+			b = confirm("그리고 이 숫자는 " + c + " 입니다");
+			alert("당신이 입력한 문자는 "+ string +" 입니다");
+		
+
+		document.write(parseInt('34',16)+'<br>');
+		document.write(parseFloat('56')+'<br>');
+		document.write(eval("6*3-(7+4)/5")+'<br>');
+		document.write(isNaN('캣서트')+'<br>');
+		document.write(isFinite(13)+'<br>');
+	}
+</script>
+</html>

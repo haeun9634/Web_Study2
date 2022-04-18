@@ -1,0 +1,16 @@
+.class {
+	font-size: 40px ;
+	background-color:rgb(60, 60, 60);
+	color: white;
+	font-weight: 200;
+}
+.myclass {
+	font-size: 20px ;
+	background-color:rgb(60, 60, 60);
+	color: white;
+}
+
+.class2 {
+	font-size: 30px ; 
+	font-weight: 100;
+}

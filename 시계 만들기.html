@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title> 디지털 시계 </title>
+		<style>
+		#time{
+			background-color: rgb(250,244,192);
+			border: 5px dashed rgb(0,216,255);
+			font-size: 50px;
+		}
+		</style>
+	</head>
+	<body>
+			<center> <span id='time'> </span> </center>
+	</body>
+	<script>
+	function clock(){
+		const time = new Date();
+		var hours = time.getHours(); //시간 불러오기
+		var minutes = time.getMinutes(); //현재 분 불러오기
+		var seconds = time.getSeconds(); // 현재 초 불러오기 
+		
+		var times = hours+'시 '+minutes+'분 '+seconds+'초';
+		
+		
+		document.getElementById('time').textContent = times
+		
+	}
+	
+	function repeat(){
+		clock();
+		setInterval(clock, 1000)//1초가 지날때마다 실행되도록 반복 
+	}
+	
+	repeat()
+	
+	
+	</script>
+
+</html>
